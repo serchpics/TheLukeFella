@@ -1,0 +1,119 @@
+/*GENERAL*/
+
+body {
+	margin: 0;
+}
+
+main {
+	padding-top: 100px;
+}
+
+p {
+	color: white;
+	font-family: Dancing Script, Arial;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*HEADER*/
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #121212;
+	height: 100px;
+	z-index: 100;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+	padding: 0 300px;
+
+	font-size: 25px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.leftMenu, .rightMenu, .nameImg{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+.nameImg {
+	margin: 0 50px;
+	height: 100px;
+}
+
+.nameImg a {
+	height: 100px;
+}
+
+.nameImg img{
+	height: 100px;
+}
+
+.leftMenu, .rightMenu {
+	width: 450px;
+}
+
+
+/*MAIN*/
+
+main {
+	background-color: #272727;
+}
+
+.about {
+	height: fit-content;
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: fit-content;
+	height: fit-content;
+	padding: 35px 60px;
+	grid-column-gap: 45px;
+}
+
+.about p {
+	font-family: Caveat, Arial;
+}
+
+.aboutVideo {
+	width: fit-content;
+}
+
+.aboutVideo video{
+	width: 250px;
+}
+
+.aboutText {
+	margin: 0 30px 30px 30px;
+}
+
+.aboutText .tittle {
+	font-size: 30px;
+	line-height: 0;
+	font-weight: 600;
+}
+
+.aboutText .paragraph {
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
