@@ -24,6 +24,7 @@ a:link {
 }
 
 
+
 /*HEADER*/
 
 header {
@@ -32,7 +33,7 @@ header {
 	left: 0;
 	right: 0;
 	background-color: #121212;
-	height: 100px;
+	height: 85px;
 	z-index: 100;
 
 	display: flex;
@@ -45,6 +46,11 @@ header {
 	font-size: 25px;
 	font-weight: 700;
 	white-space: nowrap;
+}
+
+header a {
+	color: white;
+	font-family: Dancing Script, Arial;
 }
 
 .leftMenu, .rightMenu, .nameImg{
@@ -61,15 +67,27 @@ header {
 }
 
 .nameImg a {
-	height: 100px;
+	height: 85px;
 }
 
 .nameImg img{
-	height: 100px;
+	height: 85px;
 }
 
 .leftMenu, .rightMenu {
 	width: 450px;
+}
+
+.home, .studio {
+	margin-right: 10px;
+}
+
+header a:hover {
+	color: #Fb4526;
+}
+
+.leftMenu a:hover, .rightMenu a:hover {
+	transform: scale(1.25);
 }
 
 
@@ -107,13 +125,104 @@ main {
 
 .aboutText .tittle {
 	font-size: 30px;
-	line-height: 0;
+	line-height: 30px;
 	font-weight: 600;
+	margin: 0;
 }
 
 .aboutText .paragraph {
 	font-size: 20px;
 	font-weight: 400;
-	margin-top: 20px;
+	margin-top: 24px;
 	margin-bottom: 0;
+}
+
+
+
+
+
+
+.highlights {
+	background-color: #404040;
+	height: fit-content;
+}
+
+.highlightsTittle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.highlightsTittle p {
+	padding-top: 10px;
+	font-family: Caveat, Arial;
+	font-size: 30px;
+	line-height: 0;
+	font-weight: 600;
+}
+
+.pictures {
+	display: grid;
+	padding: 15px 60px;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 50px;
+	row-gap: 50px;
+}
+
+.highlights img {
+	width: 100%;
+}
+
+
+
+
+
+/*FOOTER*/
+
+
+footer {
+	background-color: #404040;
+	height: fit-content;
+	padding: 10px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+footer .text {
+	padding: 0 100px;
+	display: inline-block;
+}
+
+footer .text p {
+	line-height: 15px;
+	font-family: Lato, Arial;
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.getDirections {
+	margin-left: 30px;
+}
+
+.insta {
+    width: 45px;
+    float: right;
+    margin-left: auto;
+    padding-right: 100px;
+}
+
+.insta img{
+    width: 100%;
+}
+
+footer a:hover {
+	color: #Fb4526;
+	font-weight: 300;
+}
+
+footer a:hover img {
+	transform: scale(1.25);
 }
