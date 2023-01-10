@@ -148,10 +148,22 @@ main {
     transition: filter 0.3s;
 }
 
+.pictures img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
 
 @media (max-width: 1000px) {
 	.pictures{
 		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 900px) {
+	.pictures {
+		column-gap: 30px;
+		row-gap: 30px;
 	}
 }
 
@@ -160,11 +172,11 @@ main {
 		grid-template-columns: 1fr;
 	}
 }
-
-
-.pictures img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
+@media (max-width: 650px) {
+	.pictures {
+		column-gap: 15px;
+		row-gap: 15px;
+	}
 }
 
 
@@ -175,7 +187,7 @@ footer {
 	background-color: #404040;
 	height: fit-content;
 	padding: 10px;
-	padding-top: 30px;
+	padding-top: 20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -195,8 +207,7 @@ footer p {
 }
 
 .getDirections {
-	margin-left: 30px;
-
+	margin-left: 20px;
 }
 
 .insta {
@@ -245,6 +256,15 @@ footer a:hover img {
 		left: 60px;
 		margin: 0;
 	}
+
+	.insta {
+	    padding-right: 50px;
+	}
+
+	footer {
+		padding-top: 0px;
+	}
+
 }
 
 @media (max-width: 650px) {
