@@ -73,6 +73,39 @@ li:hover p{
 	transition: 0.15s;
 }
 
+@media (max-width: 650px) {
+	.nameImg {
+		margin: 0 5px;
+	}
+}
+
+@media (max-width: 575px) {
+
+	li {
+		margin: 0 5px;
+	}
+
+	.nameImg {
+		margin: 0 3px;
+	}
+
+	li:hover p{
+		transform: scale(1.0);
+		color: #Fb4526;
+		transition: 0.15s;
+	}
+}
+
+@media (max-width: 470px) {
+	.nameImg {
+		margin: 0;
+	}
+
+	li {
+		font-size: 22px;
+	}
+}
+
 
 /*MAIN*/
 

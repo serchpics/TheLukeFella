@@ -171,7 +171,12 @@ main {
 	.pictures{
 		grid-template-columns: 1fr;
 	}
+
+	.highlights img {
+		filter: none;
+	}
 }
+
 @media (max-width: 650px) {
 	.pictures {
 		column-gap: 15px;
