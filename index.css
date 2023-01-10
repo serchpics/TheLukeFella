@@ -32,12 +32,7 @@ header {
 	height: 85px;
 	z-index: 100;
 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-between;
-	padding: 0 300px;
+	
 
 	font-size: 25px;
 	font-weight: 700;
@@ -49,20 +44,8 @@ header a {
 	font-family: Dancing Script, Arial;
 }
 
-.leftMenu, .rightMenu, .nameImg{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-between;
-}
-
 .nameImg {
-	margin: 0 50px;
-	height: 85px;
-}
-
-.nameImg a {
+	margin: 0 40px;
 	height: 85px;
 }
 
@@ -70,20 +53,24 @@ header a {
 	height: 85px;
 }
 
-.leftMenu, .rightMenu {
-	width: 450px;
+ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.home, .studio {
-	margin-right: 10px;
+li {
+	margin: 0 12px;
 }
 
-header a:hover {
-	color: #Fb4526;
-}
-
-.leftMenu a:hover, .rightMenu a:hover {
+li:hover p{
 	transform: scale(1.25);
+	color: #Fb4526;
+	transition: 0.15s;
 }
 
 
@@ -215,6 +202,7 @@ footer p {
 
 .insta img{
     width: 100%;
+    transition: transform 0.15s;
 }
 
 .credit {
@@ -233,6 +221,7 @@ footer p {
 footer a:hover {
 	color: #Fb4526;
 	font-weight: 300;
+	transition: 0.15s;
 }
 
 footer a:hover img {

@@ -32,12 +32,7 @@ header {
 	height: 85px;
 	z-index: 100;
 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-between;
-	padding: 0 300px;
+	
 
 	font-size: 25px;
 	font-weight: 700;
@@ -49,20 +44,8 @@ header a {
 	font-family: Dancing Script, Arial;
 }
 
-.leftMenu, .rightMenu, .nameImg{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-between;
-}
-
 .nameImg {
-	margin: 0 50px;
-	height: 85px;
-}
-
-.nameImg a {
+	margin: 0 40px;
 	height: 85px;
 }
 
@@ -70,20 +53,57 @@ header a {
 	height: 85px;
 }
 
-.leftMenu, .rightMenu {
-	width: 450px;
+ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.home, .studio {
-	margin-right: 10px;
+li {
+	margin: 0 12px;
 }
 
-header a:hover {
-	color: #Fb4526;
-}
-
-.leftMenu a:hover, .rightMenu a:hover {
+li:hover p{
 	transform: scale(1.25);
+	color: #Fb4526;
+	transition: 0.15s;
+}
+
+@media (max-width: 650px) {
+	.nameImg {
+		margin: 0 5px;
+	}
+}
+
+@media (max-width: 575px) {
+
+	li {
+		margin: 0 5px;
+	}
+
+	.nameImg {
+		margin: 0 3px;
+	}
+
+	li:hover p{
+		transform: scale(1.0);
+		color: #Fb4526;
+		transition: 0.15s;
+	}
+}
+
+@media (max-width: 470px) {
+	.nameImg {
+		margin: 0;
+	}
+
+	li {
+		font-size: 22px;
+	}
 }
 
 
@@ -123,10 +143,29 @@ main {
 
 .highlights img {
 	width: 100%;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter 0.3s;
 }
 
 
+@media (max-width: 1000px) {
+	.pictures{
+		grid-template-columns: 1fr 1fr;
+	}
+}
 
+@media (max-width: 550px) {
+	.pictures{
+		grid-template-columns: 1fr;
+	}
+}
+
+
+.pictures img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
 
 
 /*FOOTER*/
@@ -157,6 +196,7 @@ footer p {
 
 .getDirections {
 	margin-left: 30px;
+
 }
 
 .insta {
@@ -168,6 +208,7 @@ footer p {
 
 .insta img{
     width: 100%;
+    transition: transform 0.15s;
 }
 
 .credit {
@@ -186,8 +227,29 @@ footer p {
 footer a:hover {
 	color: #Fb4526;
 	font-weight: 300;
+	transition: 0.15s;
 }
 
 footer a:hover img {
 	transform: scale(1.25);
+}
+
+@media (max-width: 900px) {
+	footer .text {
+		padding: 0 50px;
+	}
+
+	.credit {
+		position: absolute;
+		bottom: 1px;
+		left: 60px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 650px) {
+	.getDirections {
+		margin-left: 0;
+		white-space: nowrap;
+	}
 }
