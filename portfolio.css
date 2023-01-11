@@ -179,13 +179,16 @@ main {
 @media (max-width: 550px) {
 	.pictures{
 		grid-template-columns: 1fr;
-		padding: 20px 30px 5px 30px;
+		padding: 20px 85px 5px 85px;
+		row-gap: 35px;
 	}
 
 	.highlights img {
 		filter: none;
 	}
+
 }
+
 
 
 /*FOOTER*/
