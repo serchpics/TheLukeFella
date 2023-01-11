@@ -107,6 +107,7 @@ li:hover p{
 }
 
 
+
 /*MAIN*/
 
 main {
@@ -235,40 +236,37 @@ main {
 
 @media (max-width: 650px) {
 	.about {
+		grid-template-columns: 1fr;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		row-gap: 20px;
 		padding: 20px 30px;
-	}
-}
-
-@media (max-width: 610px) {
-	.aboutText .paragraph {
-		line-height: 19px;
-	}
-}
-
-
-@media (max-width: 580px) {
-	.about {
-		grid-template-columns: 225px 1fr;
-		grid-column-gap: 15px;
-	}
-
-	.aboutVideo video{
-		width: 225px;
 	}
 
 	.aboutText .tittle {
-		font-size: 22px;
+		font-size: 28px;
+		line-height: 30px;
+		font-weight: 600;
+		margin: 0;
 	}
 
 	.aboutText .paragraph {
-		line-height: 18px;
-		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 22px;
+		font-weight: 400;
+		margin-bottom: 10px;
+		line-height: 26px;
+		margin-top: 15px;
 	}
-}
 
-@media (max-width: 530px) {
-	.about {
-		padding: 20px 20px;
+	.theLukeFella {
+		display: contents;
 	}
 }
 
@@ -362,6 +360,14 @@ main {
 		padding: 20px 20px 5px 20px;
 	}
 }
+
+@media (max-width: 500px) {
+	.highlightsTittle p {
+		font-size: 28px;
+		margin: 25px;
+	}
+}
+
 
 
 
