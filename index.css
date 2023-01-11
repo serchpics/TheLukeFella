@@ -343,7 +343,7 @@ main {
 @media (max-width: 550px) {
 	.pictures{
 		grid-template-columns: 1fr;
-		padding: 20px 80px 5px 80px;
+		padding: 20px 70px 5px 70px;
 		row-gap: 35px;
 	}
 
