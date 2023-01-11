@@ -164,16 +164,7 @@ main {
 	.pictures {
 		column-gap: 30px;
 		row-gap: 30px;
-	}
-}
-
-@media (max-width: 550px) {
-	.pictures{
-		grid-template-columns: 1fr;
-	}
-
-	.highlights img {
-		filter: none;
+		padding: 30px 40px 15px 40px;
 	}
 }
 
@@ -181,6 +172,18 @@ main {
 	.pictures {
 		column-gap: 15px;
 		row-gap: 15px;
+		padding: 20px 30px 10px 30px;
+	}
+}
+
+@media (max-width: 550px) {
+	.pictures{
+		grid-template-columns: 1fr;
+		padding: 20px 30px 5px 30px;
+	}
+
+	.highlights img {
+		filter: none;
 	}
 }
 
