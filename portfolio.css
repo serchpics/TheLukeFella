@@ -179,7 +179,7 @@ main {
 @media (max-width: 550px) {
 	.pictures{
 		grid-template-columns: 1fr;
-		padding: 20px 65px 5px 65px;
+		padding: 20px 66px 5px 66px;
 		row-gap: 35px;
 	}
 
