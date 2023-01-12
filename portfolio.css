@@ -162,16 +162,14 @@ main {
 
 @media (max-width: 900px) {
 	.pictures {
-		column-gap: 30px;
-		row-gap: 30px;
+		grid-gap: 30px;
 		padding: 30px 40px 15px 40px;
 	}
 }
 
 @media (max-width: 650px) {
 	.pictures {
-		column-gap: 15px;
-		row-gap: 15px;
+		grid-gap: 15px;
 		padding: 20px 30px 10px 30px;
 	}
 }
@@ -187,7 +185,18 @@ main {
 		filter: none;
 		border-radius: 20px;
 	}
+}
 
+@media (min-width: 1550px) {
+	.pictures {
+		grid-gap: 70px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.pictures {
+		grid-gap: 90px;
+	}
 }
 
 
