@@ -106,6 +106,17 @@ li:hover p{
 	}
 }
 
+@media (max-width: 410px) {
+	.nameImg {
+		margin: 0;
+	}
+
+	li {
+		font-size: 18px;
+		margin: 0 3px;
+	}
+}
+
 
 /*MAIN*/
 
