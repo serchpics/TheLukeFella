@@ -155,11 +155,9 @@ main {
 	margin: 0;
 }
 
+/*Apart from his carreer as an up-and-coming artist, Luke also has other hobbies such as volleyball and football*/
+
 .aboutText .paragraph {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 0;
@@ -254,10 +252,6 @@ main {
 	}
 
 	.aboutText .paragraph {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		font-size: 22px;
 		font-weight: 400;
 		margin-bottom: 10px;
